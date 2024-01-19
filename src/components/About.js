@@ -6,8 +6,6 @@ const About = () => {
     <div>
       <h1>About Us</h1>
       <h2>This is Namaste React Web Series</h2>
-      <User name={"Neyaz Khan (function)"}/>
-
       <UserClass name={"Neyaz Khan (class)"} location={"Bokaro Class"}/>
     </div>
   );
