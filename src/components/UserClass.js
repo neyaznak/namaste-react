@@ -11,11 +11,11 @@ class UserClass extends Component {
       }
     };
 
-    console.log(this.props.name+ "Child Constructor");
+    // console.log(this.props.name+ "Child Constructor");
   }
 
   async componentDidMount(){
-    console.log(this.props.name+ "Child Component Did Mount")
+    // console.log(this.props.name+ "Child Component Did Mount")
     //Api call
     const data = await fetch("https://api.github.com/users/neyaznak");
     const json = await data.json();
@@ -24,24 +24,24 @@ class UserClass extends Component {
       userInfo: json,
     })
 
-    console.log(json);
+    // console.log(json);
 
 
   }
 
   componentDidUpdate(){
-    console.log("Component Did Update");
+    // console.log("Component Did Update");
   }
 
   componentWillUnmount(){
-    console.log("Component Will Unmount");
+    // console.log("Component Will Unmount");
   }
 
   render() {
 
     const {name, location, avatar_url} = this.state.userInfo;
 
-    console.log(this.props.name+ "Child Render");
+    // console.log(this.props.name+ "Child Render");
 
     return (
       <div className="user-card">
