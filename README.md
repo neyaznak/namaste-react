@@ -50,3 +50,12 @@
   - Slice (cartSlice)
   - dispatch(action)
   - Selector
+
+  # Setting up testing in our app
+   - Install React Testing Library
+   - Installed jest
+   - Installed Babel dependencies
+   - Configure Babel
+   - Configure parcel config file to disble default babel transpilation
+   - Jest configuration npx jest --init
+- Install jsdom library
